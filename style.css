@@ -1,0 +1,651 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Momo-Trust-Display';
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.list {
+    display: flex;   
+}
+
+.list a {
+    display: inline-block;
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.list a:hover {
+    border-bottom: 2px solid white;
+    transform: translateX(8px);
+}
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.f1 {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #F71919 28.53%, #190101 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.f1-text h5{
+    color: white;
+    font-size: 75px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.f1-text {
+    color: white;
+}
+
+.f1-img img {
+     width: 600px;
+     height: auto;
+     margin-left: 200px;
+     margin-right: 200px;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.f1-text a {
+    display: inline-block;
+    color: white;
+    background: #F71919;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    transition: all .55s ease;
+}
+
+.f1-text p {
+    font-size: 20px;
+}
+
+.f1-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size:  24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover {
+    color: white;
+    transform: translateY(-5deg);
+}
+
+.sc-down {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.sc-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #F71919;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.sc-down i:hover {
+    color: white;
+    transform: rotateY('5px');
+}
+
+#menu-icon {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about {
+    color: white;
+}
+
+.ab-text {
+    color: white;
+    margin-left: auto;
+    font-size: 17px;
+}
+
+.ab-img {
+  display: flex;
+  justify-content: flex-start; /* foto-foto di kiri */
+  align-items: center;
+  position: relative;
+  gap: 0;
+  margin-top: 50px;
+  margin-left: 0; /* hapus jarak dari kiri */
+  padding-left: 0; /* pastikan tidak ada padding dari container */
+}
+
+/* gaya umum untuk semua foto */
+.ab-img img {
+  height: auto;
+  border-radius: 0 30% 0 30%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+/* Gambar kiri (paling kecil) */
+.ab-img img:nth-child(1) {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-40px); /* geser ke kiri */
+}
+
+/* Gambar tengah (sedang) */
+.ab-img img:nth-child(2) {
+  width: 250px;
+  position: relative;
+  z-index: 2;
+  transform: translateX(-70px); /* tumpuk lebih ke kiri */
+}
+
+/* Gambar kanan (paling besar dan paling depan) */
+.ab-img img:nth-child(3) {
+  width: 300px;
+  position: relative;
+  z-index: 3;
+  transform: translateX(-100px); /* paling kiri dari semuanya */
+}
+
+/* Efek hover */
+.ab-img img:hover {
+  transform: scale(1.05);
+  z-index: 4;
+}
+
+.sc-two {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.sc-two i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #F71919;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.sc-two i:hover {
+    color: white;
+    transform: rotateY(5deg);
+}
+
+#menu-icon {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* === CONSTRUCTORS SECTION === */
+
+.cons-section {
+    min-height: 100vh;
+    padding: 100px 10%;
+    background: #0c0c0c; /* gelap biar kontras dengan card */
+    color: white;
+}
+
+.cons-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+/* GRID */
+.cons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* CARD STYLE */
+.team-card {
+    background: #141414;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s ease;
+    border: 2px solid transparent;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.team-logo {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* DRIVER IMAGES INSIDE */
+.drivers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.driver img {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.driver p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* === TEAM COLORS === */
+
+.ferrari { border-color: #ff0000; }
+.ferrari:hover { box-shadow: 0 0 15px #ff0000; }
+
+.mclaren { border-color: #ff8c00; }
+.mclaren:hover { box-shadow: 0 0 15px #ff8c00; }
+
+.mercedes { border-color: #92f4da; }
+.mercedes:hover { box-shadow: 0 0 15px #92f4da; }
+
+.redbull { border-color: #1e41ff; }
+.redbull:hover { box-shadow: 0 0 15px #1e41ff; }
+
+.racing { border-color: #ffffff; }
+.racing:hover { box-shadow: 0 0 15px #ffffff; }
+
+.stake { border-color: #18c640; }
+.stake:hover { box-shadow: 0 0 15px #18c640; }
+
+.williams { border-color: #52c2d0; }
+.williams:hover { box-shadow: 0 0 15px #52c2d0; }
+
+.alpine { border-color: #ff00b3; }
+.alpine:hover { box-shadow: 0 0 15px #ff00b3; }
+
+.aston { border-color: #015617; }
+.aston:hover { box-shadow: 0 0 15px #015617; }
+
+.haas { border-color: #b30909; }
+.haas:hover { box-shadow: 0 0 15px #b30909; }
+
+/* === Grand Prix Section === */
+/* Struktur utama */
+.gp-section {
+    color: white;
+    padding: 100px 10%;
+    background: linear-gradient(245deg, #190101, #000000);
+}
+
+.gp-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #F71919;
+}
+
+.gp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Kartu Grand Prix */
+.gp-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.gp-card:hover {
+    transform: translateX(15px);
+    box-shadow: 0 0 15px rgba(247, 25, 25, 0.6);
+    border-color: #F71919;
+}
+
+/* Gambar peta */
+.gp-map {
+    width: 280px;
+    border-radius: 10px;
+}
+
+/* Info GP */
+.gp-info {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Judul kecil */
+.subtitle {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #F71919;
+}
+
+/* Daftar pemenang */
+.race-winners {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Baris pembalap */
+.driver-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* Nama posisi */
+.pos {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Foto pembalap */
+.driver-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.driver-row img:hover {
+    transform: scale(1.15);
+}
+
+/* wdc */
+.wdc-section {
+    color: white;
+    padding: 100px 10%;
+    background: linear-gradient(245deg, #190101, #000000);
+}
+
+.wdc-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #F71919;
+}
+
+/* Layout Podium */
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Agar P1 lebih tinggi */
+    gap: 50px; /* Tingkatkan dari 20px ke 50px untuk jarak lebih besar antar foto */
+    margin-bottom: 50px;
+}
+
+.podium-position {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Lebar setiap posisi */
+}
+
+.position-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c; /* Warna merah untuk podium */
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.driver-photo {
+    width: 210px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0 10px 0 10px;
+    transition: transform 0.3s ease; /* Efek hover pada foto */
+    outline: none; /* Menghilangkan outline default browser */
+    box-shadow: none; /* Menghilangkan bayangan jika ada */
+    margin: 30px;
+}
+
+.driver-photo:hover {
+    transform: scale(1.1); /* Sedikit zoom saat hover */
+    outline: none; /* Pastikan tetap tanpa outline saat hover */
+}
+
+/* Info Driver (Tersembunyi secara default, muncul di samping saat hover) */
+.driver-info {
+    position: absolute;
+    top: 50%;
+    left: 110%; /* Muncul di sebelah kanan foto */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.podium-position:hover .driver-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.driver-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.driver-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Untuk posisi P1 lebih tinggi */
+.p1 {
+    margin-bottom: 30px; /* Tinggi podium P1 */
+}
+
+.p1 .driver-photo {
+    width: 220px; /* Sedikit lebih besar untuk P1 */
+    height: 300px;
+}
+
+/* Styling untuk daftar lengkap standings */
+.wdc-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wdc-list h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.wdc-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wdc-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+    .podium {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .podium-position {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .driver-info {
+        position: static; /* Muncul di bawah pada mobile */
+        opacity: 1;
+        visibility: visible;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+.wcc-section {
+    padding: 60px;
+    background: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wcc-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.wcc-table {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.wcc-row {
+    display: grid;
+    grid-template-columns: 80px 8fr 80px;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #333;
+}
+
+.wcc-header {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.wcc-team img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.wcc-team {
+    display: flex;
+    align-items: center;
+    margin: 24px;
+    font-size: 18px;
+}
+
+.wcc-pos, .wcc-pts {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #000000;   
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
